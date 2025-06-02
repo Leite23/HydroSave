@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-3px); }
+}
+
+.hover-shake:hover {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes fadeInUpColor {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    color: rgb(37, 99, 235);
+  }
+}
+
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  color: rgb(37, 99, 235); 
+}
