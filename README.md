@@ -14,26 +14,57 @@ O **Hydro Save** é uma aplicação web inovadora desenvolvida para auxiliar na 
 
 Imagine uma ferramenta que te permite visualizar dados em tempo real, receber alertas personalizados e entender melhor os padrões climáticos para se preparar contra inundações. Isso é o Hydro Save!
 
-### ✨ Principais Funcionalidades (Previstas/Implementadas)
+---
 
-* **Dashboard Intuitivo:** Visualize dados importantes sobre níveis de água, previsão do tempo e áreas de risco.
-* **Alertas Personalizados:** Receba notificações em tempo real sobre situações críticas.
-* **Visualização Geográfica:** Mapas interativos para identificar pontos de alagamento.
-* **Análise de Dados Históricos:** Entenda padrões e tendências para um planejamento mais eficaz.
-* **Experiência de Usuário Fluida:** Design moderno e animações que tornam a navegação agradável.
+## ✨ Principais Funcionalidades (Previstas/Implementadas)
+
+- ✅ **Dashboard Intuitivo:** Visualize dados importantes sobre níveis de água, previsão do tempo e áreas de risco.
+- ✅ **Alertas Personalizados:** Receba notificações em tempo real sobre situações críticas.
+- ✅ **Visualização Geográfica:** Mapas interativos para identificar pontos de alagamento.
+- ✅ **Análise de Dados Históricos:** Entenda padrões e tendências para um planejamento mais eficaz.
+- ✅ **Experiência de Usuário Fluida:** Design moderno e animações que tornam a navegação agradável.
+- 🧪 **Suporte a Multi-Usuário:** Diferentes níveis de acesso (usuário comum, analista, gestor).
+- 📈 **Exportação de Dados:** Geração de relatórios em PDF ou CSV para órgãos responsáveis.
+- 🔐 **Autenticação Segura:** Login com JWT, recuperação de senha e controle de sessão.
+
+---
+
+## 📁 Estrutura de Pastas (Sugerida)
+
+```bash
+hydro-save/
+├── public/                   # Arquivos estáticos (ícones, favicon, etc)
+├── src/
+│   ├── assets/               # Imagens, ícones, fontes
+│   ├── components/           # Componentes reutilizáveis (Botão, Card, etc.)
+│   ├── layouts/              # Layouts comuns entre páginas (ex: LayoutPúblico, LayoutAdmin)
+│   ├── pages/                # Páginas da aplicação (Home, Login, Dashboard, etc.)
+│   ├── routes/               # Definições de rotas com React Router
+│   ├── services/             # Serviços de API (axios, fetch etc)
+│   ├── store/                # Estado global (ex: Redux, Zustand, Context API)
+│   ├── hooks/                # Hooks personalizados
+│   ├── utils/                # Funções utilitárias (formatadores, validadores)
+│   ├── types/                # Tipagens TypeScript globais
+│   └── styles/               # Estilos globais e configurações do Tailwind
+├── .env                      # Variáveis de ambiente
+├── tailwind.config.ts        # Configuração do Tailwind CSS
+├── tsconfig.json             # Configuração do TypeScript
+└── README.md
+```
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-Este projeto foi construído com as seguintes tecnologias de ponta:
-
-* **React.js:** Biblioteca JavaScript para construção de interfaces de usuário reativas e componentizadas.
-* **TypeScript:** Superset do JavaScript que adiciona tipagem estática, melhorando a robustez e manutenibilidade do código.
-* **React Router DOM:** Para um roteamento declarativo e navegação fluida entre as páginas da aplicação.
-* **Tailwind CSS:** Um framework CSS "utility-first" que permite estilizar o projeto de forma rápida e responsiva, sem a necessidade de escrever CSS customizado extenso.
-* **Framer Motion:** Uma biblioteca poderosa para animações no React, garantindo transições suaves e elementos visuais dinâmicos que enriquecem a experiência do usuário.
-* **Heroicons:** Conjunto de ícones SVG limpos e modernos, utilizados para elementos visuais na interface.
+- **React.js** - Biblioteca para construção de interfaces reativas
+- **TypeScript** - Tipagem estática para mais robustez
+- **Tailwind CSS** - Estilização baseada em utilitários
+- **React Router DOM** - Roteamento de páginas SPA
+- **Framer Motion** - Animações modernas e fluidas
+- **Heroicons** - Ícones SVG modernos
+- **Axios** - Cliente HTTP para comunicação com APIs
+- **Zustand** ou **Redux Toolkit** (opcional) - Gerenciamento de estado global
+- **Vite** - Ferramenta de build e dev server extremamente rápida
 
 ---
 
@@ -41,50 +72,98 @@ Este projeto foi construído com as seguintes tecnologias de ponta:
 
 A estética do Hydro Save é baseada em um visual **clean, moderno e elegante**, com uma paleta de cores centrada em tons de **azul e índigo**, remetendo à água e à tecnologia. Utilizamos gradientes sutis, sombras e animações fluidas para criar uma experiência de usuário envolvente e intuitiva.
 
-* **Navbar:** Fixa no topo, com animação de sombra ao scroll e efeitos interativos nos links.
-* **Páginas (Home, Solução, Sobre, Login, Cadastro):** Construídas com componentes reutilizáveis e animações de entrada/saída.
-* **Footer:** Um rodapé robusto e informativo, com logo proeminente, links de navegação e informações de contato, tudo animado para uma aparição suave.
-* **Página 404 Customizada:** Uma experiência de erro amigável e divertida, com animações temáticas e um direcionamento claro para a página inicial.
+### 🧩 Componentes Visuais
+
+- **Navbar:** Fixa no topo, com efeitos de scroll.
+- **Páginas:** Construídas com animações e responsividade.
+- **404 Page:** Página de erro personalizada e divertida.
+- **Footer:** Informativo e animado.
 
 ---
 
 ## ⚙️ Como Rodar o Projeto (Desenvolvimento)
 
-Para clonar e rodar este projeto em sua máquina local, siga os passos abaixo:
+### ✅ Pré-requisitos
 
-### Pré-requisitos
+- Node.js instalado
+- npm ou Yarn
 
-Certifique-se de ter o [Node.js](https://nodejs.org/en/download/) e o [npm](https://www.npmjs.com/get-npm) (ou [Yarn](https://yarnpkg.com/)) instalados em sua máquina.
-
-### Instalação
-
-1.  **Clone o repositório:**
-
-    ```bash
-    git clone [https://github.com/seu-usuario/hydro-save.git](https://github.com/seu-usuario/hydro-save.git)
-    # ou se for um repositório privado
-    git clone git@github.com:seu-usuario/hydro-save.git
-    ```
-
-2.  **Navegue até o diretório do projeto:**
-
-    ```bash
-    cd hydro-save
-    ```
-
-3.  **Instale as dependências:**
-
-    ```bash
-    npm install
-    # ou
-    yarn install
-    ```
-
-### Rodando a Aplicação
-
-Para iniciar o servidor de desenvolvimento:
+### 🛠 Instalação
 
 ```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/hydro-save.git
+cd hydro-save
+
+# Instale as dependências
+npm install
+# ou
+yarn install
+```
+
+### ▶️ Rodando o Projeto
+
+```bash
+# Ambiente de desenvolvimento
 npm run dev
 # ou
 yarn dev
+```
+
+---
+
+## 🧪 Testes (opcional)
+
+> Em construção
+
+Planejamos utilizar:
+
+- **Jest** com **React Testing Library** para testes unitários
+- **Cypress** para testes end-to-end
+
+---
+
+## 🛡️ Segurança
+
+- 🔐 Autenticação via JWT
+- 🧼 Proteção contra XSS e CSRF
+- 🔍 Validação de entrada no frontend e backend
+
+---
+
+## 📌 Contribuindo
+
+Sinta-se à vontade para abrir Issues, Pull Requests ou sugestões!
+
+```bash
+# Crie uma nova branch
+git checkout -b feature/sua-feature
+
+# Após alterações
+git commit -m "feat: sua feature incrível"
+git push origin feature/sua-feature
+```
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença [MIT](https://opensource.org/licenses/MIT).
+
+---
+
+## 🤝 Agradecimentos
+
+A todos que acreditam que a tecnologia pode salvar vidas, especialmente em tempos de crise climática. 🌎💙
+
+---
+
+## 📬 Contato
+
+Fale conosco através de:
+
+- Email: contato@hydrosave.com
+- LinkedIn: [linkedin.com/in/seu-usuario](https://linkedin.com/in/seu-usuario)
+- Site: [www.hydrosave.com](https://www.hydrosave.com)
+
+---
