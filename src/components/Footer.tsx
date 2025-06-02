@@ -41,7 +41,7 @@ export default function Footer() {
           >
             <Link to="/" className="mb-4">
               <motion.img
-                src="../src/assets/Logo.png"
+                src="./src/assets/Logo.png"
                 className="h-32 w-auto"
                 alt="Logo Hydro Save"
                 whileHover={{ rotate: 3 }}

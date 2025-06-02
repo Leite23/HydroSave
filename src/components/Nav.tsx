@@ -59,7 +59,7 @@ export default function Nav() {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <motion.img
-                src="../src/assets/Logo.png"
+                src="./src/assets/Logo.png"
                 className="h-24 w-auto"
                 alt="Logo HydroSave"
                 whileHover={{ rotate: 5 }}
