@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ShieldCheck, AlertTriangle, MapPinned, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
@@ -90,21 +90,21 @@ export default function Home() {
       </div>
 
       <div className="max-w-6xl mx-auto mt-24 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-        {cards.map(({ title, desc, Icon, color }, i) => (
-          <div
+    {cards.map(({ title, desc, Icon, color }) => ( 
+        <div
             key={title}
             className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl border border-blue-100 transition-all duration-300 cursor-pointer hover-shake"
-          >
+        >
             <Icon className="h-10 w-10 mx-auto mb-4" style={{ color: color }} />
             <h3 className="text-xl font-semibold text-blue-800 mb-2 text-center">
-              {title}
+                {title}
             </h3>
             <p className="text-gray-600 leading-relaxed text-sm text-center">
-              {desc}
+                {desc}
             </p>
-          </div>
-        ))}
-      </div>
+        </div>
+    ))}
+</div>
 
       <div className="max-w-5xl mx-auto mt-32 px-6 space-y-24">
         {scrollSections.map((text, idx) => (

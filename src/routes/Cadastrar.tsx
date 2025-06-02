@@ -55,8 +55,8 @@ export default function Cadastrar() {
 
       <motion.div
         className="w-full max-w-md bg-white p-8 md:p-10 shadow-2xl rounded-xl z-10
-                   border border-blue-100 backdrop-blur-sm bg-opacity-90 transform
-                   hover:shadow-3xl transition-shadow duration-300 ease-in-out"
+                  border border-blue-100 backdrop-blur-sm bg-opacity-90 transform
+                  hover:shadow-3xl transition-shadow duration-300 ease-in-out"
         variants={formContainerVariants}
         initial="hidden"
         animate="visible"
@@ -119,8 +119,8 @@ export default function Cadastrar() {
           <motion.button
             type="submit"
             className="w-full py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700
-                       transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl
-                       transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50"
+                      transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl
+                      transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
