@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Logo from "../assets/Logo.png";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -41,7 +42,7 @@ export default function Footer() {
           >
             <Link to="/" className="mb-4">
               <motion.img
-                src="./src/assets/Logo.png"
+                src={Logo}
                 className="h-32 w-auto"
                 alt="Logo Hydro Save"
                 whileHover={{ rotate: 3 }}

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "../assets/Logo.png";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +60,7 @@ export default function Nav() {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <motion.img
-                src="./src/assets/Logo.png"
+                src={Logo}
                 className="h-24 w-auto"
                 alt="Logo HydroSave"
                 whileHover={{ rotate: 5 }}
