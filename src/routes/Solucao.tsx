@@ -166,7 +166,7 @@ export default function Solucao() {
             cidade.
           </p>
           <a
-            href="/contato"
+            href="./contato"
             className="inline-block bg-blue-700 hover:bg-blue-800 text-white font-bold py-4 px-10 rounded-full text-xl shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out"
           >
             Fale Conosco
