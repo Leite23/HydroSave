@@ -142,7 +142,7 @@ export default function Login() {
         >
           Não tem uma conta?{" "}
           <a
-            href="/cadastrar"
+            href="./cadastrar"
             className="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200"
           >
             Cadastre-se
