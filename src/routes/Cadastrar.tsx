@@ -135,7 +135,7 @@ export default function Cadastrar() {
         >
           Já tem uma conta?{" "}
           <a
-            href="/login"
+            href="./login"
             className="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200"
           >
             Faça Login
